@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+  <!-- Transparent background tile with a black circle that has a hexagonal cutout -->
+  <path d="M 32 32 m -14, 0 a 14,14 0 1,0 28,0 a 14,14 0 1,0 -28,0
+           M 40.000 32.000 L 36.000 38.928 L 28.000 38.928 L 24.000 32.000 L 28.000 25.072 L 36.000 25.072 Z"
+        fill="black" fill-rule="evenodd" fill-opacity="0.1"/>
+</svg>

@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Om UppfartsMek — Kontakt</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">
+        <img src="assets/UppfartsMek_logo_svart.JPEG" class="logo">
+        <span class="brand-text">UppfartsMek</span>
+      </a>
+
+      <!-- Knapp för mobilmeny -->
+    <button class="menu-toggle">☰</button>
+
+      <nav class="nav">
+        <a href="index.html">Start</a>
+        <ul class="dropdown">
+          <li>
+            <a class="dropbtn">Tjänster</a>
+            <ul class="submenu">
+              <li><a href="/services/bromsar.html">Bromsar</a></li>
+              <li><a href="/services/cvAxel.html">Drivaxlar</a></li>
+              <li><a href="/services/hjullager.html">Hjullager</a></li>
+              <li><a href="/services/hjulupphängning.html">Hjulupphängning</a></li>
+            </ul>
+          </li>
+      </ul>
+        <a href="about.html">Om oss / Kontakt</a>
+      </nav>
+      <a class="cta" href="services.html">Boka service</a>
+    </div>
+  </header>
+
+  <main>
+    <div class="hero">
+      <div class="hero-row">
+        <div class="half-hero-img">
+
+        </div>
+        <div class="about-us">          
+          <h1>Om UppfartsMek</h1>
+          <p>UppfartsMek är en mobil bilservice som utför service och reparationer direkt hos kund i STO-området. Vårt mål är att göra bilservice enkelt och tillgängligt genom att arbeta utanför vanliga arbetstider — på kvällar och helger — så att du slipper anpassa dig efter verkstadens öppettider.</p>
+      
+          <section class="team">
+            <h2>Varfor valja oss?</h2>
+            <ul>
+              <li>Företagsförsäkring</li>
+              <li>12 månaders garanti</li>
+              <li>Alltid fast pris</li>
+              <li>Bekvämt: vi kommer till din uppfart</li>
+            </ul>
+          </section>
+        </div>
+      </div>
+    </div>
+    <div class="form-container container">
+      <section id="contact-form" class="contact-form">
+        <h2>Kontakta oss</h2>
+        <p>Fyll i formularet nedan sa återkommer vi så snart vi kan.</p>
+  
+        <!-- Replace `YOUR_FORMSPREE_ENDPOINT` with your Formspree endpoint or Firebase function -->
+        <form id="contact" action="https://formspree.io/f/YOUR_FORMSPREE_ENDPOINT" method="POST">
+          <label for="name">Namn</label>
+          <input type="text" id="name" name="name" required>
+  
+          <label for="phone">Telefon</label>
+          <input type="tel" id="phone" name="phone" required>
+  
+          <label for="email">E-post</label>
+          <input type="email" id="email" name="_replyto" required>
+  
+          <label for="text">Reg-Nummer</label>
+          <input type="text" id="reg-nummer" class="regnr" placeholder="ABC 123" name="car" required>
+  
+          <label for="service">Välj önskad tjänst</label>
+          <select id="service" name="service" required>
+            <option value="" disabled selected>-- Välj tjänst --</option>
+            <option value="oljebyte">Liten service</option>
+            <option value="mellanservice">Mellanservice</option>
+            <option value="storservice">Stor service</option>
+            <option value="bromsbyte">Bromsbyte (Belägg)</option>
+            <option value="bromsbyte">Bromsbyte (Belägg + skivor)</option>
+            <option value="bromsbyte">Bromsbyte (Belägg + skivor)</option>
+            <option value="bromsbyte">Bromsbyte (Komplett)</option>
+            <option value="bromsbyte">Hjullager</option>
+            <option value="bromsbyte">Hjulupphängningsdelar</option>
+            <option value="bromsbyte">Övrigt</option>
+          </select>
+  
+          <label for="oil">Foredraget oljemarke (valfritt)</label>
+          <input type="text" id="oil" name="oil" placeholder="Vi använder Autolube enligt tillverkarens specefication">
+  
+          <label for="other">Övrig information</label>
+          <textarea type="text" id="other" name="other" rows="8" placeholder="Här anger du all övrig information vi behöver ha del av, exempelvis om det gäller fram eller bak på bilen, vänster eller höger eller om det är något särkilt som nämnts hos bilprovningen"></textarea>
+  
+          <button type="submit" class="btn" id="send-btn">Skicka</button>
+        </form>
+        <p class="muted">Alternativt ring <a href="tel:+46701234567">070-123 45 67</a>.</p>
+      </section>
+      <div class="warranty-img">
+        <h3>12 månaders garanti på utfört arbete och delar</h3>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© UppfartsMek — Mobil bilservice</div>
+      <div><a href="about.html">Kontakt</a></div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
