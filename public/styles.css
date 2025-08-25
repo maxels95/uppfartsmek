@@ -446,6 +446,12 @@ input::placeholder{
       flex-wrap: wrap;
     }
 
+    #hjullager-beskrivning{
+      background-color: white;
+      height: fit-content;
+      border-radius: 10px;
+    }
+
     .oil-text{
       width: 50%;
       padding-right: 40px;
@@ -458,11 +464,18 @@ input::placeholder{
       margin: 2rem 0;
     }
 
+    #hjullager-text{
+      margin-top: 0;
+      margin-bottom: 0;
+      box-shadow: none;
+    }
+
     .oil-img{
       width: 50%;
       background-size: contain;
       background-position: center;  /* centrerar bilden */
       background-repeat: no-repeat; /* ingen upprepning */
+      border-radius: 10px;
     }
     #oil-product-img{
       background-image: url('assets/eurolub.webp');
