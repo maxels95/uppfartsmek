@@ -478,7 +478,7 @@ input::placeholder{
     }
 
 /* Responsive */
-@media (max-width:880px){
+@media (max-width:800px){
   .hero-inner{grid-template-columns:1fr;grid-auto-rows:auto}
   .features{grid-template-columns:1fr}
   .brand-text{display:none}
