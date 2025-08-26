@@ -21,3 +21,22 @@ const toggle = document.querySelector('.menu-toggle');
   toggle.addEventListener('click', () => {
     nav.classList.toggle('active');
   });
+
+// MAIL
+document.getElementById('contact').addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const form = e.target;
+    const data = {
+      name: form.name.value,
+      email: form.email.value,
+      message: form.message.value,
+    };
+
+    const res = await fetch('https://<region>-<projekt>.cloudfunctions.net/sendContactEmail', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data)
+    });
+
+    alert(await res.text());
+  });
